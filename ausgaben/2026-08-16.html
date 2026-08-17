@@ -1,0 +1,269 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BYON — Ausgabe vom 16. August 2026</title>
+<meta name="description" content="Die BYON-Ausgabe vom 16. August 2026: Nachrichten, Forschung und Termine aus der IT-Sicherheit.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9670;</text></svg>">
+<meta property="og:title" content="BYON — Build Your Own Newspaper">
+<meta property="og:description" content="Täglich kuratiert aus über hundertfünfzig Fachquellen: Nachrichten, Forschung, Termine.">
+<meta name="theme-color" content="#201a15">
+
+<style>
+  /* Das Blatt ist fuer die Mail auf feste 600 Pixel gesetzt — Postfaecher
+     rechnen mit Tabellen, nicht mit Prozenten. Im Browser ist das auf einem
+     Telefon zu breit: 600 Pixel auf einem 390 Pixel breiten Schirm, also
+     zoomt das Geraet die ganze Seite heraus, bis sie hineinpasst. Der
+     bestehende max-width:620px-Block der Mail aendert nur die Innenabstaende,
+     nicht die Tabellenbreite. Hier wird sie fluessig. */
+  @media (max-width: 620px) {
+    table.sheet { width: 100% !important; max-width: 100% !important; }
+
+    /* Die Schriftgroessen sind fuer ein 600 Pixel breites Blatt gesetzt.
+       Solange die Seite herausgezoomt war, fiel das nicht auf; seit sie
+       die volle Breite bekommt, steht dieselbe Schrift auf 390 Pixeln und
+       wirkt zu gross. Nur hier verkleinert — die Mail behaelt ihre
+       Groessen, die waren ausdruecklich so gewuenscht.
+       Die Stufen bleiben erhalten: Aufmacher groesser als der Rest. */
+    .schlag-lead { font-size: 20px !important; line-height: 27px !important; }
+    .schlag      { font-size: 18px !important; line-height: 25px !important; }
+    .fliess      { font-size: 15px !important; line-height: 24px !important; }
+    .herkunft    { font-size: 13px !important; line-height: 19px !important; }
+    .initiale    { font-size: 46px !important; line-height: 38px !important; }
+  }
+  @media (min-width: 1000px) {
+    table.sheet { width: min(94vw, 1180px) !important; max-width: none !important; }
+    .pad  { padding-left: 62px !important; padding-right: 62px !important; }
+    .padl { padding-left: 62px !important; }
+    .padr { padding-right: 62px !important; }
+    .ink, .muted, .quote { max-width: 46em; }
+  }
+  @media (min-width: 1700px) {
+    table.sheet { width: min(88vw, 1380px) !important; }
+    .pad  { padding-left: 84px !important; padding-right: 84px !important; }
+    .padl { padding-left: 84px !important; }
+    .padr { padding-right: 84px !important; }
+  }
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="supported-color-schemes" content="dark">
+<title>BYON — Weekly Security Digest</title>
+<style>
+  :root { color-scheme: dark; }
+  a { text-decoration:none; }
+  a:hover .headline { color:#cf7a4f !important; }
+  @media only screen and (max-width:620px) {
+    .pad   { padding-left:22px !important; padding-right:22px !important; }
+    .padl  { padding-left:22px !important; }
+    .padr  { padding-right:22px !important; }
+    .padin { padding-left:18px !important; padding-right:18px !important; }
+  }
+</style>
+
+
+
+<table class="bg" role="presentation" cellpadding="0" cellspacing="0" border="0"
+       width="100%" style="background:#15110d;margin:0;padding:0;width:100%;">
+  <tr>
+    <td align="center" style="padding:30px 12px 44px;">
+
+      <table class="sheet" role="presentation" cellpadding="0" cellspacing="0"
+             border="0" width="600"
+             style="width:600px;max-width:600px;background:#201a15;
+                    border:1px solid #3a3128;">
+
+        <!-- Ziegelband als Blattkante -->
+        <tr>
+          <td colspan="2" style="background:#b0522e;font-size:0;line-height:0;
+                     height:5px;">&nbsp;</td>
+        </tr>
+
+        <!-- Titelkopf -->
+        <tr>
+          <td colspan="2" align="center" class="pad" style="padding:34px 34px 0;">
+            <img src="../masthead.png" width="150" height="88" alt="BYON" style="display:block;margin:0 auto;border:0;max-width:100%;height:auto;">
+            <div class="muted" style="margin:16px 0 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                        font-size:11px;letter-spacing:3.6px;text-transform:uppercase;
+                        color:#9e917c;">Build Your Own Newspaper</div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="pad" style="padding:20px 34px 0;">
+            <div class="rule-strong" style="border-top:3px solid #6a5a48;
+                        font-size:0;line-height:0;">&nbsp;</div>
+            <div class="rule" style="border-top:1px solid #3a3128;margin-top:3px;
+                        font-size:0;line-height:0;">&nbsp;</div>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2" class="pad" style="padding:9px 34px 0;">
+            <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+              <tr>
+                <td align="left" class="muted" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+                           font-size:14px;color:#9e917c;font-style:italic;"
+                    >16. August 2026</td>
+                <td align="right" class="muted" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+                           font-size:14px;color:#9e917c;font-style:italic;"
+                    >Kalenderwoche 33</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        
+
+        
+      <tr>
+        <td colspan="2" class="pad" style="padding:38px 34px 0;">
+          <div style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;font-weight:700;
+                      letter-spacing:1.8px;text-transform:uppercase;">
+            <span class="accent" style="color:#cf7a4f;">01</span>
+            <span class="ink" style="color:#f2ebde;padding-left:9px;">Nachrichten</span>
+          </div>
+          <div class="muted" style="margin:7px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;line-height:22px;color:#9e917c;font-style:italic;">kuratiert aus fünfzehn Fachquellen</div>
+          <div class="rule-strong" style="border-top:2px solid #6a5a48;margin-top:11px;
+                                   font-size:0;line-height:0;">&nbsp;</div>
+        </td>
+      </tr>
+        <tr><td colspan="2" style="font-size:0;line-height:0;">&nbsp;</td></tr>
+        
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag-lead" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:23px;line-height:31px;color:#f2ebde;font-weight:700;">Sicherheitslücke in KI-APIs erlaubt Extraktion von Reasoning-Traces<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:10px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:17px;line-height:28px;color:#f2ebde;"><span class="accent initiale" style="float:left;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:56px;line-height:45px;padding:4px 9px 0 0;color:#cf7a4f;font-weight:700;">Z</span>eigt auf, wie interne Denkprozesse starker Modelle durch schwächere Modelle rekonstruiert werden können.</div><div style="clear:both;font-size:0;">&nbsp;</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">The Hacker News · 12.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://thehackernews.com/2026/08/sandworm-linked-uac-0145-uses-fake-job.html" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">Sandworm nutzt gefälschte Jobinterviews für VPN-Angriffe<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Beschreibt eine staatliche Kampagne zur Verbreitung von Command-and-Control-Infrastruktur.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">The Hacker News · 12.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.theregister.com/security/2026/08/13/chinese-loongson-processors-have-leaky-caches-researchers-find/5287137" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">Cache-Lecks in chinesischen Loongson-Prozessoren entdeckt<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Ermöglicht Datenextraktion aus Gast-VMs über Hardware-Seitenkanäle.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">The Register Security · 13.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.theregister.com/security/2026/08/12/spectre-rears-its-ugly-head-again-as-researchers-show-some-risc-v-chips-are-susceptible/5286978" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">RISC-V Chips anfällig für Spectre-ähnliche Angriffe<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Belegt die fortbestehende Relevanz von spekulativer Ausführung als Angriffsvektor in modernen Architekturen.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">The Register Security · 12.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.heise.de/news/Seitenkanal-erlaubt-Zugriff-auf-RAM-des-AMD-Sicherheitscontrollers-PSP-11414481.html" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">Seitenkanal-Angriff auf AMD-Sicherheitscontroller PSP<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Ermöglicht die Manipulation der RAM-Adressverwaltung in der Hardware-Sicherheitszone.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">heise Security · 14.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.bleepingcomputer.com/news/security/max-severity-sap-commerce-cloud-flaw-now-targeted-in-attacks/" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">Kritische SAP Commerce Cloud Lücke wird aktiv ausgenutzt<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Zeigt die unmittelbare Ausnutzung einer Remote Code Execution Schwachstelle in Unternehmenssoftware.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">BleepingComputer · 14.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.darkreading.com/vulnerabilities-threats/metabase-sql-zero-day-attacks-wide-blast-radius" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">Zero-Day-Angriffe auf Metabase SQL ermöglichen Admin-Zugriff<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Beschreibt eine hochkritische Schwachstelle ohne CVE mit weitem Schadensradius.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">Dark Reading · 10.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.heise.de/news/Fortinet-FortiWeb-Angreifer-koennen-sich-mit-beliebigen-Zugangsdaten-einloggen-11413738.html" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">Fortinet FortiWeb Lücke erlaubt Login mit beliebigen Daten<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Kritische Authentifizierungsumgehung in einer weit verbreiteten Web Application Firewall.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">heise Security · 14.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://krebsonsecurity.com/2026/08/microsoft-plugs-nearly-400-security-holes/" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">Microsoft schließt fast 400 Sicherheitslücken im Patch-Zyklus<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Dokumentiert das massive Volumen an notwendigen Updates für die Windows-Infrastruktur.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">Krebs on Security · 11.08.</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.darkreading.com/application-security/microsofts-patch-tuesday-deluge-continues" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:20px;line-height:28px;color:#f2ebde;font-weight:700;">Kritische RCE-Lücke in Microsoft August-Updates<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="ink fliess" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:16px;line-height:26px;color:#f2ebde;">Hebt eine spezifische Schwachstelle mit einem CVSS-Score von 9,8 hervor.</div><div class="muted herkunft" style="margin:9px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:21px;color:#9e917c;font-style:italic;">Dark Reading · 11.08.</div></a>
+        </td>
+      </tr>
+
+        
+      <tr>
+        <td colspan="2" align="center" class="pad" style="padding:26px 34px 0;">
+          <span class="accent" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;
+                     color:#cf7a4f;letter-spacing:7px;">&#9670;&#9670;&#9670;</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:38px 34px 0;">
+          <div style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;font-weight:700;
+                      letter-spacing:1.8px;text-transform:uppercase;">
+            <span class="accent" style="color:#cf7a4f;">02</span>
+            <span class="ink" style="color:#f2ebde;padding-left:9px;">Paper der Woche</span>
+          </div>
+          <div class="muted" style="margin:7px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;line-height:22px;color:#9e917c;font-style:italic;">aus den Quellen, die das Fach prägen — bleiben eine Woche stehen</div>
+          <div class="rule-strong" style="border-top:2px solid #6a5a48;margin-top:11px;
+                                   font-size:0;line-height:0;">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.usenix.org/conference/usenixsecurity26/presentation/merget" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:21px;line-height:29px;color:#f2ebde;font-weight:700;">Opossum Attack: Application Layer Desynchronization using Opportunistic TLS<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="muted herkunft" style="margin:8px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;line-height:22px;color:#9e917c;font-style:italic;">USENIX Security 2026</div><div class="ink fliess" style="margin:12px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:17px;line-height:28px;color:#f2ebde;">Zeigt eine neue Klasse von Desynchronisations-Angriffen auf Applikationsebene durch die Ausnutzung von Opportunistic TLS.</div><div class="muted" style="margin:11px 0 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;line-height:18px;color:#9e917c;letter-spacing:1.1px;text-transform:uppercase;">etwa 45 Minuten</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.usenix.org/conference/usenixsecurity26/presentation/liu-xiuming" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:21px;line-height:29px;color:#f2ebde;font-weight:700;">Quantifying Large Language Model Attacks Through the Lens of Model Cognition<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="muted herkunft" style="margin:8px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;line-height:22px;color:#9e917c;font-style:italic;">USENIX Security 2026</div><div class="ink fliess" style="margin:12px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:17px;line-height:28px;color:#f2ebde;">Quantifiziert die interne Repräsentation schädlicher Prompts in Hidden States und ermöglicht so eine Detektion vor der Generierung.</div><div class="muted" style="margin:11px 0 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;line-height:18px;color:#9e917c;letter-spacing:1.1px;text-transform:uppercase;">etwa 40 Minuten</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://arxiv.org/abs/2608.13450v1" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:21px;line-height:29px;color:#f2ebde;font-weight:700;">LLM-Assisted Dynamic Threat Analysis for Attacker-Reachable Software Weaknesses in Autonomous Vehicles<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="muted herkunft" style="margin:8px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;line-height:22px;color:#9e917c;font-style:italic;">Md Wasiul Haque, Sagar Dasgupta, Mizanur Rahman · arXiv cs.CR</div><div class="ink fliess" style="margin:12px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:17px;line-height:28px;color:#f2ebde;">Kombiniert LLMs mit statischer Analyse, um die tatsächliche Erreichbarkeit von Schwachstellen in einem realen Autonom-Fahrzeug-Stack (Autoware) zu beweisen.</div><div class="muted" style="margin:11px 0 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;line-height:18px;color:#9e917c;letter-spacing:1.1px;text-transform:uppercase;">etwa 35 Minuten</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:22px 34px;">
+          <a href="https://www.usenix.org/conference/usenixsecurity26/presentation/pan" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline schlag" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:21px;line-height:29px;color:#f2ebde;font-weight:700;">FRAGJAM: DoS Attacks Using IP Reassembly Congestion<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="muted herkunft" style="margin:8px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;line-height:22px;color:#9e917c;font-style:italic;">USENIX Security 2026</div><div class="ink fliess" style="margin:12px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:17px;line-height:28px;color:#f2ebde;">Demonstriert einen effektiven DoS-Angriff auf Linux-Systeme durch gezielte Überlastung des IP-Fragment-Reassembly-Buffers.</div><div class="muted" style="margin:11px 0 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;line-height:18px;color:#9e917c;letter-spacing:1.1px;text-transform:uppercase;">etwa 30 Minuten</div></a>
+        </td>
+      </tr>
+
+        
+      <tr>
+        <td colspan="2" align="center" class="pad" style="padding:26px 34px 0;">
+          <span class="accent" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;
+                     color:#cf7a4f;letter-spacing:7px;">&#9670;&#9670;&#9670;</span>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:38px 34px 0;">
+          <div style="font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:12px;font-weight:700;
+                      letter-spacing:1.8px;text-transform:uppercase;">
+            <span class="accent" style="color:#cf7a4f;">03</span>
+            <span class="ink" style="color:#f2ebde;padding-left:9px;">Vorträge halten</span>
+          </div>
+          <div class="muted" style="margin:7px 0 0;font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:15px;line-height:22px;color:#9e917c;font-style:italic;">offene Call for Papers, nach Frist geordnet</div>
+          <div class="rule-strong" style="border-top:2px solid #6a5a48;margin-top:11px;
+                                   font-size:0;line-height:0;">&nbsp;</div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:18px 34px;">
+          <a href="https://www.drivelock.com/de/events#events" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:18px;line-height:26px;color:#f2ebde;font-weight:700;">Deutscher IT-Security Kongress<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="accent" style="margin:6px 0 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:17px;color:#cf7a4f;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;">Einreichungsfrist · noch 32 Tage · Osnabrück</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:18px 34px;">
+          <a href="https://enginsight.com/de/veranstaltung/security-essen-2026/" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:18px;line-height:26px;color:#f2ebde;font-weight:700;">security essen 2026<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="accent" style="margin:6px 0 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:17px;color:#cf7a4f;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;">Einreichungsfrist · noch 37 Tage · Messe Essen</div></a>
+        </td>
+      </tr><tr><td colspan="2" class="pad" style="padding:0 34px;"><div class="rule" style="border-top:1px solid #3a3128;font-size:0;line-height:0;">&nbsp;</div></td></tr>
+      <tr>
+        <td colspan="2" class="pad" style="padding:18px 34px;">
+          <a href="https://conventions.io/calendar" style="display:block;text-decoration:none;color:#f2ebde;"><span class="headline" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:18px;line-height:26px;color:#f2ebde;font-weight:700;">heise devSec<span class="accent" style="color:#cf7a4f;font-weight:400;">&#8201;&#8594;</span></span><div class="accent" style="margin:6px 0 0;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;font-size:11px;line-height:17px;color:#cf7a4f;font-weight:700;letter-spacing:1.1px;text-transform:uppercase;">Einreichungsfrist · noch 37 Tage · Marburg, Germany</div></a>
+        </td>
+      </tr>
+
+        <!-- Fußzeile -->
+        <tr>
+          <td colspan="2" class="pad" style="padding:30px 34px 34px;">
+            <div class="rule-strong" style="border-top:2px solid #6a5a48;font-size:0;
+                        line-height:0;margin-bottom:14px;">&nbsp;</div>
+            
+            <div class="muted" style="font-family:'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;font-size:14px;line-height:22px;color:#9e917c;font-style:italic;">BYON liest über hundertfünfzig Fachquellen und stellt daraus jeden Morgen diese Ausgabe zusammen. Gebaut von <a href="https://metekeltek.com" style="color:#cf7a4f;text-decoration:none;">Mete Keltek</a>.</div>
+          </td>
+        </tr>
+
+      </table>
+    </td>
+  </tr>
+</table>
